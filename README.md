@@ -1,69 +1,37 @@
-# React + TypeScript + Vite
+# Schedulr++
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Schedulr++** is a visual CPU scheduling simulator built using **C++** (compiled to WebAssembly) and a modern **React + Tailwind CSS** frontend.
 
-Currently, two official plugins are available:
+It supports visualizing:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- FCFS (First-Come, First-Served)
+- SJF (Preemptive & Non-preemptive)
+- Round Robin
+- Priority (Preemptive & Non-preemptive)
 
-## Expanding the ESLint configuration
+🎯 Designed to help students and developers understand how scheduling algorithms work in real-time using interactive Gantt charts and animations.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## ✨ Highlights
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- ⚙️ Core logic written in **C++** for performance
+- ⚡ Compiled to **WebAssembly** for in-browser execution
+- 🎨 Smooth, animated UI with **Framer Motion**
+- 💡 Interactive, minimal, and responsive design
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📂 Structure
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- `public/` → C++ compiled `.wasm` and `.js` files
+- `src/` → React UI, forms, chart components
+- `dist/` → Production build (after deployment)
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 🧪 Try it
+
+Input example processes and visualize execution timeline across algorithms instantly.
+
+---
