@@ -3,6 +3,8 @@ import FCFSForm from "./FCFSForm";
 import SJFForm from "./SJFForm";
 import RRForm from "./RRForm";
 import PRIORITYForm from "./PRIORITYForm";
+import GridBackground from "./GridBackground";
+
 
 // Algorithm configurations
 const algorithms = [
@@ -38,17 +40,23 @@ const SchedulerPanel = () => {
   const [selectedAlgo, setSelectedAlgo] = useState<AlgoKey>("fcfs");
 
   return (
-    <div className="w-full pt-20 px-4 pb-10">
-      {/* Title and Subheading */}
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold text-gray-800">Schedulr++</h1>
-        <p className="text-md text-gray-500">
-          Visualize CPU scheduling algorithms powered by C++ and WebAssembly.
+    <div className="w-full pb-10">
+ <div className="relative pt-20 pb-4 overflow-hidden ">
+      <GridBackground />
+
+      <div className="relative z-10 text-center">
+        <h1 className="text-5xl font-extrabold text-gray-800 tracking-tight">
+          Schedulr<sup className="text-indigo-600 text-2xl">++</sup>
+        </h1>
+        <p className="mt-3 text-lg text-gray-500 leading-relaxed">
+          Powered by <span className="font-semibold text-gray-700">C++</span> and{" "}
+          <span className="font-semibold text-gray-700">WebAssembly</span>
         </p>
       </div>
+    
 
       {/* Tabs */}
-      <div className="mb-6 flex flex-wrap justify-center gap-3">
+      <div className="mb-6 flex flex-wrap justify-center gap-4 mt-10 relative z-10 ">
         {algorithms.map(({ label, value, color }) => (
           <button
             key={value}
@@ -65,12 +73,13 @@ const SchedulerPanel = () => {
       </div>
 
       {/* Algorithm Form Section */}
-      <div>
+      <div className="relative z-10 px-2">
         {selectedAlgo === "fcfs" && <FCFSForm />}
         {selectedAlgo === "sjf" && <SJFForm />}
         {selectedAlgo === "rr" && <RRForm />}
         {selectedAlgo === "prio" && <PRIORITYForm />}
       </div>
+    </div>
     </div>
   );
 };

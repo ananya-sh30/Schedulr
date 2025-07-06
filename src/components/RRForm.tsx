@@ -59,11 +59,11 @@ function RRForm() {
             {/* Title */}
             {/* Title Section */}
             <div className="flex flex-col items-center justify-center text-amber-600 mb-2">
-            <div className="flex items-center gap-2">
-                <Cpu className="w-8 h-8" />
+            <div className="flex items-center gap-2 justify-center ">
+                <Cpu className="w-7 h-7" />
                 <h2 className="text-2xl font-bold text-center">Round Robin Scheduler</h2>
             </div>
-            <p className="text-xs text-gray-500 mb-4">
+            <p className="text-xs text-gray-500 mb-4 mt-1 text-center">
                 Efficient time-sharing with fair CPU allocation
             </p>
             </div>
@@ -86,7 +86,7 @@ function RRForm() {
                         className="text-sm bg-amber-500 text-white px-3 py-1 rounded hover:bg-amber-600 flex items-center gap-1"
                     >
                         <PlusCircle className="w-4 h-4" />
-                        Add Process
+                        Add 
                     </button>
                     )}
                 </div>

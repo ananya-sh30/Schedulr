@@ -83,7 +83,7 @@ const ProcessStateVisualizer = ({
           className="flex items-center gap-1 text-sm bg-indigo-500 text-white px-3 py-1 rounded hover:bg-indigo-600 transition"
         >
           <RefreshCcw className="w-4 h-4" />
-          Rerun Animation
+          Rerun 
         </button>
       </div>
 

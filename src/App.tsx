@@ -1,6 +1,7 @@
 // src/App.tsx
 import { useEffect } from "react";
 import SchedulerPanel from "./components/SchedulerPanel";
+import Footer from "./components/Footer";
 
 import "./index.css";
 
@@ -30,8 +31,9 @@ function App() {
 
   return (
     <div>
-      <div className="min-h-screen bg-gray-100 flex flex-col items-center pt-4">
+      <div className="min-h-screen bg-gray-100 flex flex-col items-center ">
         <SchedulerPanel />
+        <Footer />
       </div>
     </div>
   );

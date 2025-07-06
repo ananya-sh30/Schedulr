@@ -70,11 +70,11 @@ function PRIORITYForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             {/* Title */}
             <div className="flex flex-col items-center justify-center text-slate-700 mb-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-2 ">
                 <Cpu className="w-7 h-7" />
                 <h2 className="text-2xl font-bold text-center">Priority Scheduler</h2>
               </div>
-              <p className="text-sm text-slate-500 mt-1">
+              <p className="text-xs text-slate-500 mt-1 text-center">
                 Control execution based on process importance
               </p>
             </div>
@@ -109,7 +109,7 @@ function PRIORITYForm() {
                       className="text-sm bg-slate-600 text-white px-3 py-1 rounded hover:bg-slate-700 flex items-center gap-1"
                     >
                       <PlusCircle className="w-4 h-4" />
-                      Add Process
+                      Add 
                     </button>
                   )}
                 </div>

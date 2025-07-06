@@ -57,10 +57,10 @@ function FCFSForm() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="text-center mb-2">
               <h2 className="text-2xl font-bold text-blue-500 flex justify-center items-center gap-2">
-                <Cpu className="w-8 h-8" />
+                <Cpu className="w-7 h-7" />
                 FCFS Scheduler
               </h2>
-              <p className="text-xs text-gray-500 mb-4">
+              <p className="text-xs text-gray-500 mb-4 text-center">
                 Schedule First-Come-First-Serve processes
               </p>
             </div>
@@ -83,7 +83,7 @@ function FCFSForm() {
                       className="flex items-center gap-1 text-sm bg-blue-500 text-white px-3 py-1 rounded hover:bg-blue-600 transition"
                     >
                       <PlusCircle className="w-4 h-4" />
-                      Add Process
+                      Add 
                     </button>
                   )}
                 </div>
