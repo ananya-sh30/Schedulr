@@ -4,6 +4,7 @@
 
 > 🎯 Aimed at students, educators, and developers to explore and understand CPU scheduling algorithms through real-time, animated Gantt charts.
 
+<br/>
 
 ## Supported Scheduling Algorithms
 
